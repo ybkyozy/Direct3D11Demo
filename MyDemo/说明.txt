@@ -1,0 +1,19 @@
+本D3D11 Demo基本和龙书是一样的，另外不一样的也是参考网上的，
+只是转换为VS2017上能运行，并且自己练习下。
+
+以下三个文件夹是每个Demo都要使用的，所以都在工程中设置了包含目录、库目录等
+包含目录：
+../../Common
+../../DirectXTK/inc
+../../FX11/inc
+库目录：
+../../DirectXTK/lib
+../../FX11/lib
+
+并且在 链接器->输入 中设置了 
+
+d3d11.lib
+Effects11d.lib
+DirectXTKd.lib
+
+这些都只设置了Debug版，如果是Release 则库名没有d结尾。 
